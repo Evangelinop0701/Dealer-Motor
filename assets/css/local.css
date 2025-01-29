@@ -1,0 +1,83 @@
+.table{
+    border-width: 1px solid rgb(11, 11, 187);
+}
+thead>tr{
+       background-color: rgb(145, 172, 241);
+       border-radius: 5px; 
+       height: 20px;
+       border: 1px;
+       font-family:'Palatino Linotype', Times, serif;
+}
+thead>tr>td{
+    line-height: auto;
+    vertical-align: middle;
+    font-size:14px;
+    
+     font-family:'Palatino Linotype', Times, serif;
+    
+    
+
+}
+tbody>tr>td{
+    height:auto;
+    vertical-align: middle;
+    font-size:14px;
+    
+      font-family:'Palatino Linotype', Times, serif;
+    
+
+
+}
+.breadcrumb{
+    border-radius: 2px;
+    background-color: #b8e771e7;
+}
+#btn{
+    background-color: rgb(80, 122, 248);
+    border-radius: 2px;
+    color: white;
+}
+
+.form-control{
+    border-radius: 2px;
+    font-size: 12px;
+    height: 30px;
+  
+}
+#card-header{
+    background-color: rgb(103, 128, 200);
+}
+.form-select{
+     border-radius: 2px;
+    font-size: 12px;
+    height: 30px;
+    text-align: left;
+}
+#btnn{
+    background-color: rgb(60, 187, 138);
+    border-radius: 2px;
+    color: white;
+    height: 30px;
+    margin-left: 2px;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+}
+#btnnn{
+    background-color: rgb(223, 73, 98);
+    border-radius: 2px;
+    color: white;
+    height: 30px;
+    margin-left: 2px;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+}
+
+#btnn:hover{
+    background-color:  rgb(10, 110, 85);
+}
+#btnnn:hover{
+    background-color:  rgb(161, 15, 40);
+}
+

@@ -1,0 +1,51 @@
+RewriteEngine On
+
+RewriteRule ^login.html$ login.php [L]
+RewriteRule ^print-(.*)\.html$ report.php?id=$1 [L]
+RewriteRule ^home.html$  media.php?module=home [L]
+RewriteRule ^dashboard.html$  media.php?module=dashboard [L]
+
+
+RewriteRule ^d_sasan.html$  media.php?module=d_sasan&act=showdados [L]
+RewriteRule ^input_sasan.html$  media.php?module=d_sasan&act=input [L]
+RewriteRule ^hadia_sasan-(.*)\.html$  media.php?module=d_sasan&act=edit&id=$1 [L]
+RewriteRule ^detalho-(.*)\.html$  media.php?module=d_sasan&act=detalho&id=$1 [L]
+
+RewriteRule ^stock.html$  media.php?module=stock&act=show_stock [L]
+RewriteRule ^input_stock.html$  media.php?module=stock&act=input [L]
+RewriteRule ^hadia_stock-(.*)\.html$  media.php?module=stock&act=update&id=$1 [L]
+RewriteRule ^update_stock-(.*)\.html$  media.php?module=stock&act=update_stock&id=$1 [L]
+
+RewriteRule ^transaksi.html$  media.php?module=transaksi&act=show_transaksi [L]
+RewriteRule ^transaksi-input.html$  media.php?module=transaksi&act=input [L]
+RewriteRule ^hadia-transaksi-(.*)\.html$  media.php?module=transaksi&act=update&id=$1 [L]
+RewriteRule ^dt-transaksi.html$  media.php?module=transaksi&act=det_transaksi [L]
+
+RewriteRule ^kategoria.html$  media.php?module=kategoria&act=show_kate [L]
+RewriteRule ^kategoria-input.html$  media.php?module=kategoria&act=input [L]
+RewriteRule ^kategoria-update-(.*)\.html$  media.php?module=kategoria&act=update&id=$1 [L]
+
+
+RewriteRule ^trabalhador.html$  media.php?module=trabalhador&act=showtrabalho [L]
+RewriteRule ^trabalho-input.html$  media.php?module=trabalhador&act=input [L]
+RewriteRule ^trabalho-update-(.*)\.html$  media.php?module=trabalhador&act=update&id=$1 [L]
+
+
+RewriteRule ^users.html$  media.php?module=users&act=read [L]
+RewriteRule ^users-input.html$  media.php?module=users&act=input [L]
+RewriteRule ^profile-(.*)\.html$  media.php?module=users&act=profile&id=$1 [L]
+RewriteRule ^user-update-(.*)\.html$  media.php?module=users&act=update&id=$1 [L]
+RewriteRule ^updatepass-(.*)\.html$  media.php?module=users&act=updatepass&id=$1 [L]
+
+
+RewriteRule ^mps.html$  media.php?module=mps&act=read [L]
+
+
+RewriteRule ^cliente.html$  media.php?module=cliente&act=read [L]
+RewriteRule ^cliente-input.html$  media.php?module=cliente&act=input [L]
+RewriteRule ^cliente-update-(.*)\.html$  media.php?module=cliente&act=update&id=$1 [L]
+
+RewriteRule ^error.html$  media.php?module=error [L]
+
+
+Options All -indexes
